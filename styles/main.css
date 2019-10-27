@@ -1,0 +1,21 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+a {
+	color:orange;
+}
+nav ul li a {
+	color:#ff00ff;
+}
+#page-copyright{
+	color:#ffaa00;
+}
+.byline{
+	color:#ffcc00;
+}
