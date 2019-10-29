@@ -10,7 +10,7 @@ h1 {
   font-family: "Lora", serif;
   font-style: italic;
 }
-ul {
+ul li {
 	list-style-type: circle;
 }
 h2 {
