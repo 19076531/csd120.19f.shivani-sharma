@@ -1,33 +1,23 @@
 
 body {
   background-color: powderblue;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Open Sans", sans-serif;
 }
 h1 {
   color: blue;
   background-image:url(../images/horizontal.jpg);
-width:100%;
-height:10%;
-top:0;
-bottom:0;
-right:0;
-left:0;
-background-repeat: repeat-x;
-font-style: italic;
+  background-repeat: repeat-x;
+  font-family: "Lora", serif;
+  font-style: italic;
 }
-ul li{
+ul li {
 	list-style-type: circle;
 }
 h2 {
   background-image:url(../images/horizontal.jpg);
-width:100%;
-height:10%;
-top:0;
-bottom:0;
-right:0;
-left:0;
-background-repeat: repeat-x;
-font-style: italic;
+  background-repeat: repeat-x;
+  font-family: "Lora", serif;
+  font-style: italic;
 }
 p {
   color: red;
@@ -47,7 +37,7 @@ nav ul li a {
 #page-copyright{
 	color:#ffaa00;
 	text-transform: uppercase;
-	font-size: 3px;
+	letter-spacing: 3px;
 }
 .byline{
 	color:#ffcc00;
