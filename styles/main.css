@@ -19,6 +19,8 @@ text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 ul li{
 	list-style-type: circle;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 h2 {
@@ -44,6 +46,7 @@ a {
 nav ul li{
 	display: inline-block;
 	list-style-type: none;
+        float:left;
 	
 }
 nav ul li a {
@@ -52,10 +55,19 @@ nav ul li a {
 	
 }
 header{
-	border-bottom:4px solid rgba(0,0,0.1);
+	    border-bottom: 4px solid rgba(0,0,0.1);
+    padding: 2em;
+    margin-left: -2em;
+    margin-right: -2em;
 }
 header nav{
-	float:right;
+	      float: right;
+    margin-right: 2em;
+    margin-left: 2em;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    border-bottom: 1px dotted rgba(0,0,0.3);
+}
 }
 #page-copyright{
 	color:#ffaa00;
@@ -104,18 +116,24 @@ footer hr{
 	border-top-right-radius: 8px;
 }
 .mugshot {
-	float:right;
-	background-position: top 10px right 7px;
-	
-	margin-top: -1em;
-	 
+    float: right;
+    position: relative;
+    top: -1em;
+    
 }
 .paperclip {
-	background-image: url(../images/paperclip.png);
-	
-	background-size: contain;
-	width:50px;
-	height:50px;
-	position: absolute;
-	
+    background-image: url("../images/paperclip.png");
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -10px;
+    right: -7px;
 }
+
+.back-to-top{
+	    margin-right: -.5em;
+    opacity: .5;
+	float:right;
+}
+	
