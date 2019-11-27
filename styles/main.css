@@ -1,3 +1,4 @@
+* { box-sizing: border-box; }
 
 body {
   background-color: powderblue;
@@ -43,8 +44,13 @@ p {
 a {
 	color:orange;
 }
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
 nav ul li{
-	display: inline-block;
+    margin: 0;
 	list-style-type: none;
         float:left;
 	
@@ -52,23 +58,30 @@ nav ul li{
 nav ul li a {
 	color:#ff00ff;
 	text-decoration: none;
+    
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin: 0 1em;
 	
+    border-top: 4px solid transparent;
+}
+nav ul li a:hover {
+    border-top: 4px solid black;
 }
 header{
-	    border-bottom: 4px solid rgba(0,0,0.1);
-    padding: 2em;
+    border-top: 4px solid rgba(0,0,0,0.1);
     margin-left: -2em;
     margin-right: -2em;
 }
 header nav{
-	      float: right;
     margin-right: 2em;
     margin-left: 2em;
-    padding-top: 1em;
-    padding-bottom: .5em;
-    border-bottom: 1px dotted rgba(0,0,0.3);
+    margin-top: -4px;
+    border-bottom: 1px dotted rgba(0,0,0,0.3);
+    overflow: auto;
 }
-}
+
 #page-copyright{
 	color:#ffaa00;
 	text-transform: uppercase;
@@ -86,8 +99,11 @@ figure img{
 	text-indent: 3em; 
 }
 
+.myFav {
+    clear: both;
+}
+
 .width-wrap{
-	box-sizing: border-box;
 	border: 1px solid rgba(0,0,0.3);
 	margin:0 auto;
     height: 100%;
@@ -132,8 +148,16 @@ footer hr{
 }
 
 .back-to-top{
-	    margin-right: -.5em;
+	margin-right: -.5em;
+    text-align: right;
     opacity: .5;
-	float:right;
+}
+
+.back-to-top a {
+    position: fixed;
+    bottom: 3.5em;
 }
 	
+.back-to-top:hover {
+    opacity: 1;
+}
