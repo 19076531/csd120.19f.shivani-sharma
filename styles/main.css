@@ -2,6 +2,10 @@
 body {
   background-color: powderblue;
   font-family: "Times New Roman", Times, serif;
+  padding-top: 0;
+    padding-bottom: 0;
+    min-height: 100vh;
+    display: flex;
 }
 h1 {
   color: blue;
@@ -22,6 +26,17 @@ ul li{
     margin-left: 1em;
     margin-right: 1em;
 }
+main{
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+
+}
+.galary {
+	grid-column: span 2;
+    width: 100%;
+}
+ 
 
 h2 {
   background: rgb(2,0,36);
@@ -46,28 +61,39 @@ a {
 nav ul li{
 	display: inline-block;
 	list-style-type: none;
-        float:left;
+      
 	
 }
+nav ul{
+	display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
 nav ul li a {
 	color:#ff00ff;
 	text-decoration: none;
 	
 }
 header{
-	    border-bottom: 4px solid rgba(0,0,0.1);
+	   /* border-bottom: 4px solid rgba(0,0,0.1);*/
     padding: 2em;
     margin-left: -2em;
     margin-right: -2em;
 }
 header nav{
-	      float: right;
+	     
     margin-right: 2em;
     margin-left: 2em;
     padding-top: 1em;
     padding-bottom: .5em;
     border-bottom: 1px dotted rgba(0,0,0.3);
 }
+
+header nav  ul li a:hover {
+    border-top-style: solid;
+    border-width: 4px;
+    border-color: red;
 }
 #page-copyright{
 	color:#ffaa00;
@@ -82,8 +108,15 @@ figure img{
 	font-size: 70%;
 }
 
+.bio {
+	grid-column: span 2;
+}
 .bio p{
+	
 	text-indent: 3em; 
+}
+.useful-links {
+	grid-column: span 2;
 }
 
 .width-wrap{
@@ -97,6 +130,7 @@ figure img{
 	margin-bottom: 3em;
 	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
 }
+
 footer{
 	text-align: center;
 	font-size: 12px;
@@ -130,6 +164,9 @@ footer hr{
     top: -10px;
     right: -7px;
 }
+.glossary{
+	grid-column: span 2;
+}
 
 .back-to-top{
 	    margin-right: -.5em;
@@ -137,3 +174,35 @@ footer hr{
 	float:right;
 }
 	
+.back-to-top a {
+    position: fixed;
+    bottom: 3.5em;
+}
+.galary-thumbnails {
+	display: grid;
+	width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+}
+.galary-thumbnails img {
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.row-span-2 {
+    grid-row: span 2;
+}
+.col-span-2 {
+    grid-column: span 2;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.galary-thumbnails img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
