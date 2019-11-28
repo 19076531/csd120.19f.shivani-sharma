@@ -1,0 +1,66 @@
+@media only screen and (max-width: 768px)
+{
+    header nav ul {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+    header a:hover
+    {
+        border: 0;
+        text-decoration: underline;
+    }
+	main
+    {
+        display:block;
+    }
+	footer hr
+    {
+        display:none;
+    }
+    .paperclip
+    {
+        display:none;
+    }
+    .mugshot
+    {
+       float:none;
+       margin-left: 0;
+       margin-right: 0;
+    }
+    
+    .row-span-2.col-span-2
+    {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+   
+    .burger {
+		width: 40px;
+        height: 25px;
+        cursor: pointer;
+        position: relative;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 1em;
+
+  }        
+    .burger,
+    .burger::before,
+    .burger::after {
+       width: 40px;
+       border-top: 5px solid #A70DCD;
+   }
+    .burger::before,
+    .burger::after {
+       content: "";
+       display: block;
+       position: absolute;
+  }        
+
+    .burger::before { top: 5px; }
+    .burger::after { top: 12px; }
+       
+}
