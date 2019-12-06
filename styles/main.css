@@ -67,6 +67,8 @@ nav ul{
 	display: flex;
     /* flex-direction: column; */
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
@@ -83,7 +85,7 @@ header{
     border-top: 4px solid rgba(0,0,0,0.1);
 }
 header nav{
-	     
+	margin-top: -4px;
     margin-right: 2em;
     margin-left: 2em;
     border-bottom: 1px dotted rgba(0,0,0.3);
@@ -96,10 +98,11 @@ header nav a {
     /* margin-left: 1em; */
     margin-right: 2em;
     display: block;
-}
-header a:hover {
     border-top-style: solid;
     border-width: 4px;
+    border-color: transparent;
+}
+header a:hover {
     border-color: red;
 }
 
